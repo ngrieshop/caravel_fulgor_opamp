@@ -34,14 +34,14 @@ module user_project_wrapper(user_clock2, vccd1, vccd2, vdda1, vdda2, vssa1, vssa
   opamp_v1 opamp_v1_1();
 
   opamp_v1 opamp_v1_2();
-
+  
   opamp_v1 opamp_v1_3();
-  
-  opamp_v1 opamp_v1_4();
-  
-  opamp_v1 opamp_v1_5();
 
-  opamp_v1 opamp_v1_6();
+  opampjulia opampjulia_0();
+
+  opampjulia opampjulia_1();
+
+  opampjulia opampjulia_2();
 
   PLL_ PLL__0(); 
 
