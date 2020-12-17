@@ -11,9 +11,7 @@ N 130 20 130 170 { lab=in}
 N 80 90 130 90 { lab=in}
 N 210 90 300 90 { lab=out}
 N 210 200 210 240 { lab=vss}
-N 210 170 280 170 { lab=vss}
-N 280 170 280 240 { lab=vss}
-N 210 240 280 240 { lab=vss}
+N 210 170 280 170 { lab=vbulk}
 N 80 240 210 240 { lab=vss}
 N 210 -50 210 -10 { lab=vdd}
 N 80 -50 210 -50 { lab=vdd}
@@ -48,3 +46,4 @@ C {ipin.sym} 80 90 0 0 {name=p2 lab=in
 C {ipin.sym} 80 240 0 0 {name=p3 lab=vss}
 C {opin.sym} 300 90 0 0 {name=p4 lab=out
 }
+C {ipin.sym} 280 170 2 0 {name=p5 lab=vbulk}
