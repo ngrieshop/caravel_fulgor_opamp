@@ -24,10 +24,11 @@ N 360 0 360 30 { lab=OUT}
 N 280 -40 280 0 { lab=OUT}
 N 280 0 300 -0 { lab=OUT}
 N 440 -40 440 -0 { lab=OUT}
-N 360 60 440 60 { lab=vss}
-N 440 60 440 200 { lab=vss}
-N 360 200 440 200 { lab=vss}
-N 360 150 440 150 { lab=vss}
+N 360 60 440 60 { lab=vbulk}
+N 440 60 440 200 { lab=vbulk}
+N 360 150 440 150 { lab=vbulk}
+N 280 230 440 230 { lab=vbulk}
+N 440 200 440 230 { lab=vbulk}
 C {sky130_fd_pr/nfet_01v8.sym} 340 150 0 0 {name=M1
 L=0.15
 W=0.45
@@ -52,7 +53,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 260 -70 0 0 {name=M5
 L=0.15
-W=0.45
+W=0.9
 ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
 as="'W * 0.29'" ps="'2 * (W + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
@@ -63,7 +64,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 460 -70 0 1 {name=M6
 L=0.15
-W=0.45
+W=0.9
 ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
 as="'W * 0.29'" ps="'2 * (W + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
@@ -79,3 +80,4 @@ C {ipin.sym} 280 150 0 0 {name=p5 lab=B}
 C {ipin.sym} 280 200 0 0 {name=p6 lab=vss}
 C {lab_pin.sym} 280 60 0 0 {name=l1 sig_type=std_logic lab=A}
 C {lab_pin.sym} 520 -70 2 0 {name=l2 sig_type=std_logic lab=B}
+C {ipin.sym} 280 230 0 0 {name=p4 lab=vbulk}

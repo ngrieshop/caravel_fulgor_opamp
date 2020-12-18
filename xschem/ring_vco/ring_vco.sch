@@ -27,7 +27,7 @@ N 220 -80 220 -30 { lab=10}
 N 330 -80 330 -30 { lab=10}
 N 440 -80 440 -30 { lab=10}
 N 550 -80 550 -30 { lab=10}
-N 2520 0 2620 0 { lab=out_vco}
+N 2640 0 2740 0 { lab=out_vco}
 N -0 -80 550 -80 { lab=10}
 N 550 -80 640 -80 { lab=10}
 N 290 -200 290 -80 { lab=10}
@@ -54,18 +54,18 @@ N -280 180 -280 250 { lab=vss}
 N -280 250 -200 250 { lab=vss}
 N -200 -140 -120 -140 { lab=5}
 N -120 -230 -120 -140 { lab=5}
-N 2360 -30 2360 30 { lab=out_ring}
-N 2360 0 2420 0 { lab=out_ring}
-N 2290 60 2320 60 { lab=#net1}
-N 2290 -60 2290 60 { lab=#net1}
-N 2290 -60 2320 -60 { lab=#net1}
-N 2360 -120 2360 -90 { lab=10}
-N 2290 -120 2360 -120 { lab=10}
-N 2290 -120 2290 -80 { lab=10}
+N 2480 -30 2480 30 { lab=out_ring}
+N 2480 0 2540 0 { lab=out_ring}
+N 2410 60 2440 60 { lab=#net1}
+N 2410 -60 2410 60 { lab=#net1}
+N 2410 -60 2440 -60 { lab=#net1}
+N 2480 -120 2480 -90 { lab=10}
+N 2410 -120 2480 -120 { lab=10}
+N 2410 -120 2410 -80 { lab=10}
 N 640 -80 690 -80 { lab=10}
-N 2360 90 2360 120 { lab=9}
-N 2290 120 2360 120 { lab=9}
-N 2290 80 2290 120 { lab=9}
+N 2480 90 2480 120 { lab=9}
+N 2410 120 2480 120 { lab=9}
+N 2410 80 2410 120 { lab=9}
 N 290 80 690 80 { lab=9}
 N 290 80 290 150 { lab=9}
 N 330 60 330 80 { lab=9}
@@ -75,26 +75,26 @@ N -0 80 290 80 { lab=9}
 N -0 60 0 80 { lab=9}
 N 110 60 110 80 { lab=9}
 N 220 60 220 80 { lab=9}
-N 2520 -30 2520 30 { lab=out_vco}
-N 2520 90 2520 120 { lab=vss}
-N 2520 120 2610 120 { lab=vss}
-N 2610 60 2610 120 { lab=vss}
-N 2520 60 2610 60 { lab=vss}
-N 2450 60 2480 60 { lab=out_ring}
-N 2450 -60 2450 60 { lab=out_ring}
-N 2450 -60 2480 -60 { lab=out_ring}
-N 2420 0 2450 0 { lab=out_ring}
-N 2520 -120 2520 -90 { lab=vdd}
-N 2520 -120 2600 -120 { lab=vdd}
-N 2600 -120 2600 -60 { lab=vdd}
-N 2520 -60 2600 -60 { lab=vdd}
+N 2640 -30 2640 30 { lab=out_vco}
+N 2640 90 2640 120 { lab=vss}
+N 2640 120 2730 120 { lab=vss}
+N 2730 60 2730 120 { lab=vss}
+N 2640 60 2730 60 { lab=vss}
+N 2570 60 2600 60 { lab=out_ring}
+N 2570 -60 2570 60 { lab=out_ring}
+N 2570 -60 2600 -60 { lab=out_ring}
+N 2540 0 2570 0 { lab=out_ring}
+N 2640 -120 2640 -90 { lab=vdd}
+N 2640 -120 2720 -120 { lab=vdd}
+N 2720 -120 2720 -60 { lab=vdd}
+N 2640 -60 2720 -60 { lab=vdd}
 N 670 -300 670 -270 { lab=vss}
 N 670 -390 670 -360 { lab=in}
-N 2360 -60 2420 -60 { lab=10}
-N 2420 -120 2420 -60 { lab=10}
-N 2360 -120 2420 -120 { lab=10}
-N 2360 60 2440 60 { lab=vss}
-N 2440 60 2440 120 { lab=vss}
+N 2480 -60 2540 -60 { lab=10}
+N 2540 -120 2540 -60 { lab=10}
+N 2480 -120 2540 -120 { lab=10}
+N 2480 60 2560 60 { lab=vss}
+N 2560 60 2560 120 { lab=vss}
 N 600 -0 620 -0 { lab=o6}
 N 710 -0 730 -0 { lab=o7}
 N 690 80 910 80 { lab=9}
@@ -179,27 +179,18 @@ N 1880 10 1880 50 { lab=vss}
 N 1880 10 1910 10 { lab=vss}
 N 1820 30 1820 80 { lab=9}
 N 1950 30 1950 80 { lab=9}
-N 2260 0 2290 0 { lab=#net1}
 N 1950 -80 1950 -30 { lab=10}
 N 1820 -80 1820 -30 { lab=10}
 N 1870 -0 1910 -0 { lab=#net10}
 N 2010 10 2010 50 { lab=vss}
 N 2010 10 2030 10 { lab=vss}
-N 2010 50 2130 50 { lab=vss}
-N 2130 10 2130 50 { lab=vss}
-N 2130 10 2160 10 { lab=vss}
-N 2120 0 2160 0 { lab=#net11}
-N 2000 0 2030 -0 { lab=#net12}
+N 2000 0 2030 -0 { lab=#net11}
 N 1880 50 2010 50 { lab=vss}
 N 2030 80 2200 80 { lab=9}
-N 2200 30 2200 80 { lab=9}
-N 2200 -80 2200 -30 { lab=10}
 N 2030 -80 2200 -80 { lab=10}
 N 2070 -80 2070 -30 { lab=10}
 N 2070 30 2070 80 { lab=9}
-N 2250 0 2260 -0 { lab=#net1}
-N 2200 80 2290 80 { lab=9}
-N 2200 -80 2290 -80 { lab=10}
+N 2280 80 2370 80 { lab=9}
 N 770 210 770 240 { lab=vdd}
 N 770 380 770 400 { lab=vss}
 N 670 310 700 310 { lab=out_vco}
@@ -225,9 +216,43 @@ N 1570 380 1570 400 { lab=vss}
 N 1470 310 1500 310 { lab=outx16}
 N 1570 400 1570 420 { lab=vss}
 N 1440 310 1470 310 { lab=outx16}
-N 1640 310 1690 310 { lab=out}
-N 1690 310 1690 350 { lab=out}
-N 1690 410 1690 440 { lab=vss}
+N 1640 310 1690 310 { lab=outx32}
+N 1920 310 1920 350 { lab=out}
+N 1920 410 1920 440 { lab=vss}
+N 1760 310 1860 310 { lab=out}
+N 1760 280 1760 340 { lab=out}
+N 1760 400 1760 430 { lab=vss}
+N 1760 430 1850 430 { lab=vss}
+N 1850 370 1850 430 { lab=vss}
+N 1760 370 1850 370 { lab=vss}
+N 1690 370 1720 370 { lab=outx32}
+N 1690 250 1690 370 { lab=outx32}
+N 1690 250 1720 250 { lab=outx32}
+N 1760 190 1760 220 { lab=vdd}
+N 1760 190 1840 190 { lab=vdd}
+N 1840 190 1840 250 { lab=vdd}
+N 1760 250 1840 250 { lab=vdd}
+N 1860 310 1920 310 { lab=out}
+N 770 -300 770 -270 { lab=vss}
+N 770 -390 770 -360 { lab=en}
+N 2370 80 2410 80 { lab=9}
+N 2200 80 2280 80 { lab=9}
+N 2200 -80 2290 -80 { lab=10}
+N 2290 -80 2410 -80 { lab=10}
+N 2350 0 2410 -0 { lab=#net1}
+N 2120 -0 2140 0 { lab=#net12}
+N 2140 -100 2140 0 { lab=#net12}
+N 2030 -100 2140 -100 { lab=#net12}
+N 2030 -190 2030 -100 { lab=#net12}
+N 2030 -190 2100 -190 { lab=#net12}
+N 2350 -110 2350 0 { lab=#net1}
+N 2350 -110 2400 -110 { lab=#net1}
+N 2400 -210 2400 -110 { lab=#net1}
+N 2080 -130 2100 -130 { lab=vss}
+N 2080 -150 2100 -150 { lab=9}
+N 2080 -170 2100 -170 { lab=en}
+N 2080 -210 2100 -210 { lab=10
+}
 C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 0 0 0 0 {name=x1}
 C {vsource.sym} 480 -330 0 0 {name=V1 value=DC\{Vss\}}
 C {vsource.sym} 570 -330 0 0 {name=V2 value=DC\{Vdd\}}
@@ -236,7 +261,7 @@ C {lab_pin.sym} 480 -390 1 0 {name=l3 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 570 -270 3 0 {name=l2 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 570 -390 1 0 {name=l9 sig_type=std_logic lab=vdd
 }
-C {netlist_not_shown.sym} 790 -380 0 0 {name=SIMULATION only_toplevel=false 
+C {netlist_not_shown.sym} 1060 -380 0 0 {name=SIMULATION only_toplevel=false 
 
 value="
 
@@ -249,7 +274,7 @@ value="
 .options TEMP = 65.0
 
 * Include Models
-.lib ~/skywater_pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib SS
+.lib ~/skywater_pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib TT
 
 * OP Parameters & Singals to save
 .save all
@@ -264,7 +289,8 @@ value="
 .control
   tran 0.05n 1u
   setplot tran1
-  plot v(out) v(outx16)+2 v(outx8)+4 v(outx4)+6 v(outx2)+8 v(out_vco)+10
+  plot v(out) v(outx32)+2 v(outx16)+4 v(outx8)+6 v(outx4)+8 v(outx2)+10 v(out_vco)+12 v(en)+14
+  
   linearize
   set specwindow="blackman"
   fft v(out_vco)
@@ -278,7 +304,7 @@ value="
   fft v(out)
   spec 10 1000000 1000 v(out)
   plot mag(v(out))
-  *write ~/caravel_fulgor_opamp/xschem/sim_results/opamp_closeloop_tran1.raw
+  write ~/caravel_fulgor_opamp/xschem/ring_vco/ring_vco_tran1.raw
   
   
 .endc
@@ -291,9 +317,9 @@ C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 330 0 0 0 {name
 C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 440 0 0 0 {name=x5}
 C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 550 0 0 0 {name=x6}
 C {lab_pin.sym} -80 0 0 0 {name=l5 sig_type=std_logic lab=out_ring}
-C {lab_wire.sym} 2570 -120 0 0 {name=l11 sig_type=std_logic lab=vdd}
-C {lab_wire.sym} 2570 120 0 0 {name=l14 sig_type=std_logic lab=vss}
-C {sky130_fd_pr/nfet_01v8.sym} 2340 60 0 0 {name=M1
+C {lab_wire.sym} 2690 -120 0 0 {name=l11 sig_type=std_logic lab=vdd}
+C {lab_wire.sym} 2690 120 0 0 {name=l14 sig_type=std_logic lab=vss}
+C {sky130_fd_pr/nfet_01v8.sym} 2460 60 0 0 {name=M1
 L=0.15
 W=1.2
 ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
@@ -304,7 +330,7 @@ nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 2340 -60 0 0 {name=M2
+C {sky130_fd_pr/pfet_01v8.sym} 2460 -60 0 0 {name=M2
 L=0.15
 W=1.5
 ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
@@ -315,7 +341,7 @@ nf=1 mult=2
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 2500 60 0 0 {name=M3
+C {sky130_fd_pr/nfet_01v8.sym} 2620 60 0 0 {name=M3
 L=0.15
 W=0.6
 ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
@@ -326,7 +352,7 @@ nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 2500 -60 0 0 {name=M4
+C {sky130_fd_pr/pfet_01v8.sym} 2620 -60 0 0 {name=M4
 L=0.15
 W=1.5
 ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
@@ -337,8 +363,8 @@ nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_wire.sym} 2420 0 0 0 {name=l4 sig_type=std_logic lab=out_ring}
-C {lab_pin.sym} 2620 0 2 0 {name=l6 sig_type=std_logic lab=out_vco}
+C {lab_wire.sym} 2540 0 0 0 {name=l4 sig_type=std_logic lab=out_ring}
+C {lab_pin.sym} 2740 0 2 0 {name=l6 sig_type=std_logic lab=out_vco}
 C {sky130_fd_pr/pfet_01v8.sym} 270 -230 0 0 {name=M5
 L=0.15
 W=1.5
@@ -403,7 +429,7 @@ C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 770 0 0 0 {name
 C {lab_wire.sym} 720 0 0 0 {name=l24 sig_type=std_logic lab=o7}
 C {lab_wire.sym} 830 0 0 0 {name=l25 sig_type=std_logic lab=o8}
 C {lab_wire.sym} -30 50 0 0 {name=l26 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 2440 120 3 0 {name=l27 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 2560 120 3 0 {name=l27 sig_type=std_logic lab=vss}
 C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 880 0 0 0 {name=x9}
 C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 990 0 0 0 {name=x10}
 C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 1100 0 0 0 {name=x11}
@@ -415,7 +441,6 @@ C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 1700 0 0 0 {nam
 C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 1820 0 0 0 {name=x17}
 C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 1950 0 0 0 {name=x18}
 C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 2070 0 0 0 {name=x19}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 2200 0 0 0 {name=x20}
 C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/FD_v2.sym} 770 310 0 0 {name=x21}
 C {lab_pin.sym} 770 210 1 0 {name=l28 sig_type=std_logic lab=vdd
 }
@@ -437,14 +462,47 @@ C {lab_pin.sym} 1570 210 1 0 {name=l36 sig_type=std_logic lab=vdd
 }
 C {lab_pin.sym} 1570 420 3 0 {name=l37 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 640 310 0 0 {name=l38 sig_type=std_logic lab=out_vco}
-C {lab_pin.sym} 1690 310 2 0 {name=l39 sig_type=std_logic lab=out}
+C {lab_pin.sym} 1920 310 2 0 {name=l39 sig_type=std_logic lab=out}
 C {lab_wire.sym} 1090 310 0 0 {name=l41 sig_type=std_logic lab=outx4}
 C {lab_wire.sym} 890 310 0 0 {name=l40 sig_type=std_logic lab=outx2}
 C {lab_wire.sym} 1290 310 0 0 {name=l42 sig_type=std_logic lab=outx8}
 C {lab_wire.sym} 1490 310 0 0 {name=l43 sig_type=std_logic lab=outx16}
-C {capa.sym} 1690 380 0 0 {name=C1
+C {capa.sym} 1920 380 0 0 {name=C1
 m=1
-value=10f
+value=2p
 footprint=1206
 device="ceramic capacitor"}
-C {lab_pin.sym} 1690 440 3 0 {name=l44 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 1920 440 3 0 {name=l44 sig_type=std_logic lab=vss}
+C {lab_wire.sym} 1810 190 0 0 {name=l45 sig_type=std_logic lab=vdd}
+C {lab_wire.sym} 1810 430 0 0 {name=l46 sig_type=std_logic lab=vss}
+C {sky130_fd_pr/nfet_01v8.sym} 1740 370 0 0 {name=M9
+L=0.15
+W=1.2
+ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
+as="'W * 0.29'" ps="'2 * (W + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+nf=1 mult=2
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 1740 250 0 0 {name=M10
+L=0.15
+W=1.5
+ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
+as="'W * 0.29'" ps="'2 * (W + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+nf=1 mult=4
+model=pfet_01v8
+spiceprefix=X
+}
+C {lab_wire.sym} 1680 310 0 0 {name=l47 sig_type=std_logic lab=outx32}
+C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/nand.sym} 2250 -170 0 0 {name=x26}
+C {vsource.sym} 770 -330 0 0 {name=V4 value="PULSE(0 \{Vdd\} 100ns 1ps 1ps 0.25us 0.5us)"}
+C {lab_pin.sym} 770 -270 3 0 {name=l49 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 770 -390 1 0 {name=l50 sig_type=std_logic lab=en}
+C {lab_pin.sym} 2080 -210 0 0 {name=l48 sig_type=std_logic lab=10}
+C {lab_pin.sym} 2080 -170 0 0 {name=l51 sig_type=std_logic lab=en}
+C {lab_pin.sym} 2080 -150 0 0 {name=l52 sig_type=std_logic lab=9}
+C {lab_pin.sym} 2080 -130 0 0 {name=l53 sig_type=std_logic lab=vss}
