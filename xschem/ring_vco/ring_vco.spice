@@ -62,7 +62,7 @@ V4 en vss PULSE(0 {Vdd} 100ns 1ps 1ps 0.25us 0.5us)
 .options TEMP = 65.0
 
 * Include Models
-.lib ~/skywater_pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib FF
+.lib ~/skywater_pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib TT
 
 * OP Parameters & Singals to save
 .save all  @M.X2.XM1.msky130_fd_pr__nfet_01v8[id] @M.X2.XM1.msky130_fd_pr__nfet_01v8[vth]

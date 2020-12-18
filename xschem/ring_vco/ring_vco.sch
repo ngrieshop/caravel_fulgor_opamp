@@ -241,18 +241,15 @@ N 2200 -80 2290 -80 { lab=10}
 N 2290 -80 2410 -80 { lab=10}
 N 2350 0 2410 -0 { lab=#net1}
 N 2120 -0 2140 0 { lab=#net12}
-N 2140 -100 2140 0 { lab=#net12}
-N 2030 -100 2140 -100 { lab=#net12}
-N 2030 -190 2030 -100 { lab=#net12}
-N 2030 -190 2100 -190 { lab=#net12}
-N 2350 -110 2350 0 { lab=#net1}
-N 2350 -110 2400 -110 { lab=#net1}
-N 2400 -210 2400 -110 { lab=#net1}
-N 2080 -130 2100 -130 { lab=vss}
-N 2080 -150 2100 -150 { lab=9}
-N 2080 -170 2100 -170 { lab=en}
-N 2080 -210 2100 -210 { lab=10
-}
+N 2150 20 2170 20 { lab=en}
+N 2220 70 2220 80 {}
+N 2120 70 2210 70 {}
+N 2010 50 2120 50 {}
+N 2120 50 2120 70 {}
+N 2140 -20 2170 -20 {}
+N 2310 -0 2350 -0 {}
+N 2220 -80 2220 -70 {}
+N 2140 -20 2140 0 {}
 C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 0 0 0 0 {name=x1}
 C {vsource.sym} 480 -330 0 0 {name=V1 value=DC\{Vss\}}
 C {vsource.sym} 570 -330 0 0 {name=V2 value=DC\{Vdd\}}
@@ -498,11 +495,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {lab_wire.sym} 1680 310 0 0 {name=l47 sig_type=std_logic lab=outx32}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/nand.sym} 2250 -170 0 0 {name=x26}
+C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/nand.sym} 2230 0 0 0 {name=x26}
 C {vsource.sym} 770 -330 0 0 {name=V4 value="PULSE(0 \{Vdd\} 100ns 1ps 1ps 0.25us 0.5us)"}
 C {lab_pin.sym} 770 -270 3 0 {name=l49 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 770 -390 1 0 {name=l50 sig_type=std_logic lab=en}
-C {lab_pin.sym} 2080 -210 0 0 {name=l48 sig_type=std_logic lab=10}
-C {lab_pin.sym} 2080 -170 0 0 {name=l51 sig_type=std_logic lab=en}
-C {lab_pin.sym} 2080 -150 0 0 {name=l52 sig_type=std_logic lab=9}
-C {lab_pin.sym} 2080 -130 0 0 {name=l53 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 2150 20 0 0 {name=l51 sig_type=std_logic lab=en}
