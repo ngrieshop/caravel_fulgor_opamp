@@ -28,12 +28,12 @@ rect -5006 658 -4775 692
 rect -5094 396 -5060 531
 rect -5006 437 -4971 658
 rect -5314 292 -4462 396
-use sky130_fd_pr__nfet_01v8_PUCP6T  inv_nfet
-timestamp 1608326735
-transform 1 0 -5033 0 1 507
-box -211 -255 211 77
 use sky130_fd_pr__pfet_01v8_35M7SK  sky130_fd_pr__pfet_01v8_35M7SK_0
 timestamp 1608326616
 transform 1 0 -5033 0 1 822
 box -211 -128 211 188
+use sky130_fd_pr__nfet_01v8_PUCP6T  inv_nfet
+timestamp 1608326735
+transform 1 0 -5033 0 1 507
+box -211 -255 211 77
 << end >>
