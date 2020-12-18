@@ -1,35 +1,25 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1608322001
+timestamp 1608329555
 << nwell >>
 rect -5304 932 -4420 1124
 << pwell >>
+rect -5246 544 -4824 604
 rect -5314 266 -4462 418
-<< psubdiff >>
-rect -5184 366 -4896 368
-rect -5184 292 -5136 366
-rect -4952 292 -4896 366
 << nsubdiff >>
-rect -5156 982 -5116 1056
-rect -4932 982 -4868 1056
-<< psubdiffcont >>
-rect -5136 292 -4952 366
+rect -5216 972 -5190 1026
+rect -4886 972 -4862 1026
 << nsubdiffcont >>
-rect -5116 982 -4932 1056
+rect -5190 972 -4886 1026
 << poly >>
 rect -5048 692 -5018 931
-rect -4801 708 -4747 718
 rect -5393 658 -5018 692
 rect -5048 415 -5018 658
-rect -4836 640 -4747 708
-rect -4801 631 -4747 640
+rect -4800 631 -4747 718
 << locali >>
-rect -5156 982 -5116 1056
-rect -4932 982 -4868 1056
-rect -5184 366 -4896 368
-rect -5184 292 -5136 366
-rect -4952 292 -4896 366
+rect -5216 972 -5190 1026
+rect -4886 972 -4862 1026
 << metal1 >>
 rect -5304 944 -4418 1056
 rect -5096 826 -5062 944
@@ -38,22 +28,12 @@ rect -5006 658 -4775 692
 rect -5094 396 -5060 531
 rect -5006 437 -4971 658
 rect -5314 292 -4462 396
-use sky130_fd_pr__nfet_01v8_6MNZ3F  inv_nfet
-timestamp 1608322001
-transform 1 0 -5033 0 1 504
-box -211 -252 211 252
-use via_li_m1  via_li_m1_1
-array 0 3 72 0 0 74
-timestamp 1607692587
-transform 1 0 -5192 0 1 294
-box 4 0 76 74
-use via_li_m1  via_li_m1_0
-array 0 3 72 0 0 74
-timestamp 1607692587
-transform 1 0 -5140 0 1 980
-box 4 0 76 74
-use sky130_fd_pr__pfet_01v8_HA7HUY  inv_pfet
-timestamp 1608252628
-transform 1 0 -5033 0 1 863
-box -128 -92 118 92
+use sky130_fd_pr__nfet_01v8_PUCP6T  inv_nfet
+timestamp 1608326735
+transform 1 0 -5033 0 1 507
+box -211 -255 211 77
+use sky130_fd_pr__pfet_01v8_35M7SK  sky130_fd_pr__pfet_01v8_35M7SK_0
+timestamp 1608326616
+transform 1 0 -5033 0 1 822
+box -211 -128 211 188
 << end >>
