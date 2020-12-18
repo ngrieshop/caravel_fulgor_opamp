@@ -1,0 +1,42 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1608334821
+<< nwell >>
+rect 3563 672 3809 1469
+rect 3572 -1405 3818 -608
+<< pwell >>
+rect 3626 75 3793 614
+rect 3626 67 3650 75
+rect 3588 -550 3755 55
+<< metal1 >>
+rect 64 -203 7301 233
+<< metal2 >>
+rect 7359 539 7473 549
+rect 7332 401 7359 493
+rect 7332 391 7473 401
+rect 7332 -717 7465 391
+<< via2 >>
+rect 7359 401 7473 539
+<< metal3 >>
+rect 7349 539 7483 544
+rect 7349 401 7359 539
+rect 7473 401 7483 539
+rect 7349 396 7483 401
+use freq_div  freq_div_2
+timestamp 1608334096
+transform -1 0 2955 0 -1 49
+box -710 -10 3151 1455
+use freq_div  freq_div_3
+timestamp 1608334096
+transform -1 0 6671 0 -1 54
+box -710 -10 3151 1455
+use freq_div  freq_div_1
+timestamp 1608334096
+transform 1 0 4426 0 1 15
+box -710 -10 3151 1455
+use freq_div  freq_div_0
+timestamp 1608334096
+transform 1 0 710 0 1 10
+box -710 -10 3151 1455
+<< end >>
