@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1608348248
+timestamp 1608354687
 << nwell >>
 rect -4208 9978 7720 11293
 << metal1 >>
@@ -48,11 +48,11 @@ rect -4252 7904 -4234 7988
 rect -4502 7900 -4234 7904
 rect -4342 7899 -4242 7900
 use ring_vco  ring_vco_0
-timestamp 1608340973
+timestamp 1608352248
 transform -1 0 2594 0 1 4659
 box -5124 2462 6897 5532
 use divx32  divx32_0
-timestamp 1608345554
+timestamp 1608354390
 transform 1 0 -1515 0 -1 11957
 box -296 -3279 7626 1470
 << labels >>

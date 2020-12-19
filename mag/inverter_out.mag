@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1608344763
+timestamp 1608354390
 << nwell >>
 rect 408 664 1342 1692
 << pwell >>
@@ -15,8 +15,23 @@ rect 564 -221 1108 -215
 rect 509 1343 1244 1631
 << psubdiffcont >>
 rect 606 -215 1057 -38
+<< poly >>
+rect 716 901 746 941
+rect 812 901 842 943
+rect 908 901 938 943
+rect 1004 901 1034 943
+rect 713 891 1052 901
+rect 713 854 731 891
+rect 1025 854 1052 891
+rect 713 844 1052 854
+<< polycont >>
+rect 731 854 1025 891
+<< locali >>
+rect 715 854 731 891
+rect 1025 854 1041 891
 << viali >>
 rect 508 1343 1241 1626
+rect 731 854 1025 891
 rect 574 -38 1104 44
 rect 574 -215 606 -38
 rect 606 -215 1057 -38
@@ -35,7 +50,11 @@ rect 904 937 914 1180
 rect 946 954 997 1337
 rect 1032 939 1042 1182
 rect 1101 939 1111 1182
-rect 753 734 901 903
+rect 725 891 1037 903
+rect 719 854 731 891
+rect 1025 854 1037 891
+rect 725 848 1037 854
+rect 753 734 901 848
 rect 408 586 901 734
 rect 753 471 901 586
 rect 681 188 691 442
@@ -75,14 +94,14 @@ rect 749 188 905 439
 rect 691 186 905 188
 rect 691 178 749 186
 rect 905 175 983 185
+use sky130_fd_pr__pfet_01v8_5UHRWD  sky130_fd_pr__pfet_01v8_5UHRWD_0
+timestamp 1608353910
+transform 1 0 875 0 1 1091
+box -359 -369 359 369
 use sky130_fd_pr__nfet_01v8_WRE4LY  sky130_fd_pr__nfet_01v8_WRE4LY_0
 timestamp 1608344059
 transform 1 0 831 0 1 318
 box -263 -330 263 330
-use sky130_fd_pr__pfet_01v8_DZ9A69  sky130_fd_pr__pfet_01v8_DZ9A69_0
-timestamp 1608344763
-transform 1 0 875 0 1 1056
-box -359 -334 359 334
 << labels >>
 rlabel metal1 408 586 901 734 1 in
 rlabel metal2 733 536 1318 766 1 out
