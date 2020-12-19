@@ -100,14 +100,14 @@ rect 341 -489 342 -382
 rect 274 -496 342 -489
 rect 274 -499 341 -496
 rect -228 -648 -124 -638
-use sky130_fd_pr__nfet_01v8_TFZGL8  sky130_fd_pr__nfet_01v8_TFZGL8_0
-timestamp 1608325973
-transform 1 0 201 0 1 -421
-box -263 -255 263 255
 use sky130_fd_pr__pfet_01v8_H49BFK  sky130_fd_pr__pfet_01v8_H49BFK_0
 timestamp 1608325295
 transform 1 0 210 0 1 256
 box -263 -309 263 309
+use sky130_fd_pr__nfet_01v8_TFZGL8  sky130_fd_pr__nfet_01v8_TFZGL8_0
+timestamp 1608325973
+transform 1 0 201 0 1 -421
+box -263 -255 263 255
 << labels >>
 rlabel metal1 -98 383 289 438 1 A
 rlabel nwell -48 500 459 725 1 vdd
