@@ -1221,19 +1221,6 @@ rect -4764 2857 -99 2902
 rect -4764 2853 -39 2857
 rect -4824 2838 -4764 2848
 rect -99 2847 -39 2853
-use via_li_m1  via_li_m1_4
-array 0 13 72 0 0 74
-timestamp 1607692587
-transform 1 0 5705 0 1 3141
-box 4 0 76 74
-use sky130_fd_pr__nfet_01v8_R7545W  sky130_fd_pr__nfet_01v8_R7545W_0
-timestamp 1608229183
-transform 1 0 5788 0 1 3563
-box -211 -330 211 330
-use sky130_fd_pr__nfet_01v8_9TXQ83  sky130_fd_pr__nfet_01v8_9TXQ83_1
-timestamp 1608229483
-transform 1 0 6580 0 1 3579
-box -211 -264 211 264
 use sky130_fd_pr__nfet_01v8_ZE46K8  sky130_fd_pr__nfet_01v8_ZE46K8_0
 timestamp 1608322001
 transform -1 0 -64 0 -1 3056
@@ -1252,6 +1239,19 @@ use sky130_fd_pr__nfet_01v8_YK3456  sky130_fd_pr__nfet_01v8_YK3456_0
 timestamp 1608249442
 transform -1 0 -4795 0 -1 3024
 box -211 -300 211 300
+use via_li_m1  via_li_m1_4
+array 0 13 72 0 0 74
+timestamp 1607692587
+transform 1 0 5705 0 1 3141
+box 4 0 76 74
+use sky130_fd_pr__nfet_01v8_R7545W  sky130_fd_pr__nfet_01v8_R7545W_0
+timestamp 1608229183
+transform 1 0 5788 0 1 3563
+box -211 -330 211 330
+use sky130_fd_pr__nfet_01v8_9TXQ83  sky130_fd_pr__nfet_01v8_9TXQ83_1
+timestamp 1608229483
+transform 1 0 6580 0 1 3579
+box -211 -264 211 264
 use sky130_fd_pr__pfet_01v8_373K6R  sky130_fd_pr__pfet_01v8_373K6R_0
 timestamp 1608255150
 transform 1 0 6580 0 1 4274
@@ -1260,6 +1260,11 @@ use sky130_fd_pr__pfet_01v8_3FZUWK  sky130_fd_pr__pfet_01v8_3FZUWK_0
 timestamp 1608254796
 transform 1 0 5788 0 1 4431
 box -211 -436 211 459
+use inverter  inverter_1
+array 0 19 430 0 0 936
+timestamp 1608336920
+transform 1 0 935 0 1 3178
+box -5252 188 -4822 1124
 use sky130_fd_pr__pfet_01v8_35M7SP  sky130_fd_pr__pfet_01v8_35M7SP_0
 timestamp 1608253040
 transform 1 0 -4755 0 1 4963
@@ -1282,11 +1287,6 @@ use nand  nand_0
 timestamp 1608325973
 transform 1 0 4710 0 1 4083
 box -267 -910 511 767
-use inverter  inverter_1
-array 0 19 430 0 0 936
-timestamp 1608336920
-transform 1 0 935 0 1 3178
-box -5252 188 -4822 1124
 << labels >>
 rlabel metal1 -5114 2462 -3040 2804 1 vss
 rlabel metal1 -5122 5198 -2718 5516 1 vdd

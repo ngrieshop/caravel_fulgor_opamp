@@ -242,15 +242,15 @@ N 2290 -80 2410 -80 { lab=10}
 N 2350 0 2410 -0 { lab=#net1}
 N 2120 -0 2140 0 { lab=#net12}
 N 2150 20 2170 20 { lab=en}
-N 2220 70 2220 80 {}
-N 2120 70 2210 70 {}
-N 2010 50 2120 50 {}
-N 2120 50 2120 70 {}
-N 2140 -20 2170 -20 {}
-N 2310 -0 2350 -0 {}
-N 2220 -80 2220 -70 {}
-N 2140 -20 2140 0 {}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 0 0 0 0 {name=x1}
+N 2220 70 2220 80 { lab=9}
+N 2120 70 2210 70 { lab=vss}
+N 2010 50 2120 50 { lab=vss}
+N 2120 50 2120 70 { lab=vss}
+N 2140 -20 2170 -20 { lab=#net12}
+N 2310 -0 2350 -0 { lab=#net1}
+N 2220 -80 2220 -70 { lab=10}
+N 2140 -20 2140 0 { lab=#net12}
+C {not.sym} 0 0 0 0 {name=x1}
 C {vsource.sym} 480 -330 0 0 {name=V1 value=DC\{Vss\}}
 C {vsource.sym} 570 -330 0 0 {name=V2 value=DC\{Vdd\}}
 C {gnd.sym} 480 -270 0 0 {name=l1 lab=GND}
@@ -308,11 +308,11 @@ value="
 
 .end
 "}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 110 0 0 0 {name=x2}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 220 0 0 0 {name=x3}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 330 0 0 0 {name=x4}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 440 0 0 0 {name=x5}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 550 0 0 0 {name=x6}
+C {not.sym} 110 0 0 0 {name=x2}
+C {not.sym} 220 0 0 0 {name=x3}
+C {not.sym} 330 0 0 0 {name=x4}
+C {not.sym} 440 0 0 0 {name=x5}
+C {not.sym} 550 0 0 0 {name=x6}
 C {lab_pin.sym} -80 0 0 0 {name=l5 sig_type=std_logic lab=out_ring}
 C {lab_wire.sym} 2690 -120 0 0 {name=l11 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 2690 120 0 0 {name=l14 sig_type=std_logic lab=vss}
@@ -421,40 +421,40 @@ C {lab_wire.sym} 610 0 0 0 {name=l21 sig_type=std_logic lab=o6}
 C {vsource.sym} 670 -330 0 0 {name=V3 value=DC\{Vin\}}
 C {lab_pin.sym} 670 -270 3 0 {name=l22 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 670 -390 1 0 {name=l23 sig_type=std_logic lab=in}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 660 0 0 0 {name=x7}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 770 0 0 0 {name=x8}
+C {not.sym} 660 0 0 0 {name=x7}
+C {not.sym} 770 0 0 0 {name=x8}
 C {lab_wire.sym} 720 0 0 0 {name=l24 sig_type=std_logic lab=o7}
 C {lab_wire.sym} 830 0 0 0 {name=l25 sig_type=std_logic lab=o8}
 C {lab_wire.sym} -30 50 0 0 {name=l26 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 2560 120 3 0 {name=l27 sig_type=std_logic lab=vss}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 880 0 0 0 {name=x9}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 990 0 0 0 {name=x10}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 1100 0 0 0 {name=x11}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 1220 0 0 0 {name=x12}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 1340 0 0 0 {name=x13}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 1460 0 0 0 {name=x14}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 1580 0 0 0 {name=x15}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 1700 0 0 0 {name=x16}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 1820 0 0 0 {name=x17}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 1950 0 0 0 {name=x18}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym} 2070 0 0 0 {name=x19}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/FD_v2.sym} 770 310 0 0 {name=x21}
+C {not.sym} 880 0 0 0 {name=x9}
+C {not.sym} 990 0 0 0 {name=x10}
+C {not.sym} 1100 0 0 0 {name=x11}
+C {not.sym} 1220 0 0 0 {name=x12}
+C {not.sym} 1340 0 0 0 {name=x13}
+C {not.sym} 1460 0 0 0 {name=x14}
+C {not.sym} 1580 0 0 0 {name=x15}
+C {not.sym} 1700 0 0 0 {name=x16}
+C {not.sym} 1820 0 0 0 {name=x17}
+C {not.sym} 1950 0 0 0 {name=x18}
+C {not.sym} 2070 0 0 0 {name=x19}
+C {FD_v2.sym} 770 310 0 0 {name=x21}
 C {lab_pin.sym} 770 210 1 0 {name=l28 sig_type=std_logic lab=vdd
 }
 C {lab_pin.sym} 770 420 3 0 {name=l29 sig_type=std_logic lab=vss}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/FD_v2.sym} 970 310 0 0 {name=x22}
+C {FD_v2.sym} 970 310 0 0 {name=x22}
 C {lab_pin.sym} 970 210 1 0 {name=l30 sig_type=std_logic lab=vdd
 }
 C {lab_pin.sym} 970 420 3 0 {name=l31 sig_type=std_logic lab=vss}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/FD_v2.sym} 1170 310 0 0 {name=x23}
+C {FD_v2.sym} 1170 310 0 0 {name=x23}
 C {lab_pin.sym} 1170 210 1 0 {name=l32 sig_type=std_logic lab=vdd
 }
 C {lab_pin.sym} 1170 420 3 0 {name=l33 sig_type=std_logic lab=vss}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/FD_v2.sym} 1370 310 0 0 {name=x24}
+C {FD_v2.sym} 1370 310 0 0 {name=x24}
 C {lab_pin.sym} 1370 210 1 0 {name=l34 sig_type=std_logic lab=vdd
 }
 C {lab_pin.sym} 1370 420 3 0 {name=l35 sig_type=std_logic lab=vss}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/FD_v2.sym} 1570 310 0 0 {name=x25}
+C {FD_v2.sym} 1570 310 0 0 {name=x25}
 C {lab_pin.sym} 1570 210 1 0 {name=l36 sig_type=std_logic lab=vdd
 }
 C {lab_pin.sym} 1570 420 3 0 {name=l37 sig_type=std_logic lab=vss}
@@ -495,7 +495,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {lab_wire.sym} 1680 310 0 0 {name=l47 sig_type=std_logic lab=outx32}
-C {/home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/nand.sym} 2230 0 0 0 {name=x26}
+C {nand.sym} 2230 0 0 0 {name=x26}
 C {vsource.sym} 770 -330 0 0 {name=V4 value="PULSE(0 \{Vdd\} 100ns 1ps 1ps 0.25us 0.5us)"}
 C {lab_pin.sym} 770 -270 3 0 {name=l49 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 770 -390 1 0 {name=l50 sig_type=std_logic lab=en}
