@@ -56,14 +56,14 @@ rect 790 433 842 635
 rect 998 625 1050 635
 rect 783 423 846 433
 rect 783 306 846 316
-use sky130_fd_pr__pfet_01v8_B5M7SB  sky130_fd_pr__pfet_01v8_B5M7SB_0
-timestamp 1608331766
-transform 1 0 756 0 1 955
-box -211 -274 211 274
 use sky130_fd_pr__nfet_01v8_ETUE4C  sky130_fd_pr__nfet_01v8_ETUE4C_0
 timestamp 1608331766
 transform 1 0 756 0 1 412
 box -211 -224 211 224
+use sky130_fd_pr__pfet_01v8_B5M7SB  sky130_fd_pr__pfet_01v8_B5M7SB_0
+timestamp 1608331766
+transform 1 0 756 0 1 955
+box -211 -274 211 274
 << labels >>
 rlabel metal1 456 635 790 698 1 in
 rlabel via1 998 635 1050 687 1 out
