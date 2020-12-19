@@ -157,29 +157,29 @@ rect 634 298 649 374
 rect -61 287 649 298
 rect -61 278 -51 287
 rect -176 273 -51 278
-use inverter_fd  inverter_fd_0
+use inverter_fd  inverter_fd_3
 timestamp 1608331766
-transform 1 0 -456 0 1 -20
+transform 1 0 -1147 0 1 -17
 box 456 20 1060 1458
-use trans_gate  trans_gate_0
+use inverter_fd  inverter_fd_2
 timestamp 1608331766
-transform 1 0 738 0 1 710
-box -157 -701 436 733
-use inverter_fd  inverter_fd_1
-timestamp 1608331766
-transform 1 0 712 0 1 -8
+transform 1 0 1876 0 1 -3
 box 456 20 1060 1458
 use trans_gate  trans_gate_1
 timestamp 1608331766
 transform 1 0 1913 0 1 718
 box -157 -701 436 733
-use inverter_fd  inverter_fd_2
+use inverter_fd  inverter_fd_1
 timestamp 1608331766
-transform 1 0 1876 0 1 -3
+transform 1 0 712 0 1 -8
 box 456 20 1060 1458
-use inverter_fd  inverter_fd_3
+use trans_gate  trans_gate_0
 timestamp 1608331766
-transform 1 0 -1147 0 1 -17
+transform 1 0 738 0 1 710
+box -157 -701 436 733
+use inverter_fd  inverter_fd_0
+timestamp 1608331766
+transform 1 0 -456 0 1 -20
 box 456 20 1060 1458
 << labels >>
 rlabel metal3 2395 407 3151 517 1 out
