@@ -1,11 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1608331766
+timestamp 1608354825
 << nwell >>
 rect 457 679 1048 1458
-<< pwell >>
-rect 479 20 1006 642
 << psubdiff >>
 rect 510 195 986 265
 rect 510 70 539 195
@@ -36,8 +34,8 @@ rect 988 635 998 687
 rect 1050 635 1060 687
 rect 727 458 790 635
 rect 684 271 732 426
-rect 773 316 783 423
-rect 846 316 856 423
+rect 768 332 778 426
+rect 846 332 856 426
 rect 498 265 998 271
 rect 498 64 510 265
 rect 986 64 998 265
@@ -45,17 +43,17 @@ rect 498 58 998 64
 << via1 >>
 rect 784 906 845 1089
 rect 998 635 1050 687
-rect 783 316 846 423
+rect 778 332 846 426
 << metal2 >>
 rect 784 1089 845 1099
 rect 784 896 845 906
 rect 790 687 842 896
 rect 998 687 1050 697
 rect 790 635 998 687
-rect 790 433 842 635
+rect 790 436 842 635
 rect 998 625 1050 635
-rect 783 423 846 433
-rect 783 306 846 316
+rect 778 426 846 436
+rect 778 322 846 332
 use sky130_fd_pr__nfet_01v8_ETUE4C  sky130_fd_pr__nfet_01v8_ETUE4C_0
 timestamp 1608331766
 transform 1 0 756 0 1 412
@@ -67,6 +65,5 @@ box -211 -274 211 274
 << labels >>
 rlabel metal1 456 635 790 698 1 in
 rlabel via1 998 635 1050 687 1 out
-rlabel pwell 510 64 986 265 1 vss
 rlabel viali 550 1184 959 1363 1 vdd
 << end >>

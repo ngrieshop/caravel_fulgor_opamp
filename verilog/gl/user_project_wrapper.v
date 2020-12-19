@@ -42,6 +42,8 @@ module user_project_wrapper(user_clock2, vccd1, vccd2, vdda1, vdda2, vssa1, vssa
   opampjulia opampjulia_1();
 
   opampjulia opampjulia_2();
+  
+  ring_osc ring_osc_0();
 
   PLL_ PLL__0(); 
 
