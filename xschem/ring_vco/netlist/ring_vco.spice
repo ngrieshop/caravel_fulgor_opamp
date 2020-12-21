@@ -62,7 +62,7 @@ V4 en vss PULSE(0 {Vdd} 100ns 1ps 1ps 0.25us 0.5us)
 .options TEMP = 65.0
 
 * Include Models
-.lib ~/skywater_pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib TT
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib TT
 
 * OP Parameters & Singals to save
 .save all  @M.X2.XM1.msky130_fd_pr__nfet_01v8[id] @M.X2.XM1.msky130_fd_pr__nfet_01v8[vth]
@@ -100,7 +100,7 @@ V4 en vss PULSE(0 {Vdd} 100ns 1ps 1ps 0.25us 0.5us)
   fft v(out)
   spec 10 1000000 1000 v(out)
   plot mag(v(out))
-  write ~/caravel_fulgor_opamp/xschem/ring_vco/ring_vco_tran1.raw
+  write ~/caravel_fulgor_opamp/xschem/ring_vco/sim_results/ring_vco_tran1.raw
 
 
 .endc
@@ -111,7 +111,7 @@ V4 en vss PULSE(0 {Vdd} 100ns 1ps 1ps 0.25us 0.5us)
 **** end user architecture code
 **.ends
 
-* expanding   symbol:  /home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/not.sym # of pins=5
+* expanding   symbol:  not.sym # of pins=5
 
 .subckt not  vdd in out vss vbulk
 *.ipin vdd
@@ -126,7 +126,7 @@ XM2 out in vdd vdd sky130_fd_pr__pfet_01v8 W=0.9 L=0.15 ad='W * 0.29' pd='2 * (W
 .ends
 
 
-* expanding   symbol:  /home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/FD_v2.sym # of pins=4
+* expanding   symbol:  FD_v2.sym # of pins=4
 
 .subckt FD_v2  clk vss out vdd
 *.opin out
@@ -160,7 +160,7 @@ XM12 clk_b clk vdd vdd sky130_fd_pr__pfet_01v8 W=0.9 L=0.15 ad='W * 0.29' pd='2 
 .ends
 
 
-* expanding   symbol:  /home/dhernando/caravel_fulgor_opamp/xschem/ring_vco/nand.sym # of pins=6
+* expanding   symbol:  nand.sym # of pins=6
 
 .subckt nand  vdd A OUT B vss vbulk
 *.opin OUT

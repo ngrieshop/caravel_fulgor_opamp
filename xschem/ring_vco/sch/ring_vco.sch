@@ -271,7 +271,7 @@ value="
 .options TEMP = 65.0
 
 * Include Models
-.lib ~/skywater_pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib TT
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib TT
 
 * OP Parameters & Singals to save
 .save all
@@ -301,7 +301,7 @@ value="
   fft v(out)
   spec 10 1000000 1000 v(out)
   plot mag(v(out))
-  write ~/caravel_fulgor_opamp/xschem/ring_vco/ring_vco_tran1.raw
+  write ~/caravel_fulgor_opamp/xschem/ring_vco/sim_results/ring_vco_tran1.raw
   
   
 .endc

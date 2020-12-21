@@ -22,19 +22,22 @@ N 1260 -550 1310 -550 { lab=vout}
 N 1030 -250 1030 -210 { lab=vss}
 N 1030 -360 1030 -310 { lab=vin}
 N 1250 -280 1250 -260 { lab=vss}
-N 1390 -340 1390 -310 { lab=vout}
-N 1310 -340 1390 -340 { lab=vout}
-N 1390 -250 1390 -200 { lab=vss}
+N 1460 -340 1460 -310 { lab=vout}
+N 1460 -250 1460 -200 { lab=vss}
 N 1110 -290 1110 -250 { lab=vcm}
 N 1110 -190 1110 -150 { lab=vss}
 N 1110 -320 1110 -290 { lab=vcm}
 N 1110 -320 1170 -320 { lab=vcm}
-N 1090 -360 1170 -360 { lab=vin}
 N 920 -360 1030 -360 { lab=vin}
 N 1310 -550 1390 -550 { lab=vout}
-N 1390 -550 1390 -340 { lab=vout}
 N 1050 -550 1200 -550 { lab=vin}
 N 1230 -420 1230 -390 { lab=vdd}
+N 1150 -360 1170 -360 { lab=#net2}
+N 1400 -340 1420 -340 { lab=vout}
+N 1390 -550 1460 -550 { lab=vout}
+N 1460 -550 1460 -340 { lab=vout}
+N 1420 -340 1460 -340 { lab=vout}
+N 1310 -340 1340 -340 { lab=#net3}
 C {vsource.sym} 600 -200 0 0 {name=V1 value=DC\{vss\}}
 C {vsource.sym} 700 -200 0 0 {name=V2 value=DC\{vdd\}}
 C {gnd.sym} 600 -130 0 0 {name=l14 lab=GND}
@@ -82,7 +85,7 @@ value="
 .options TEMP = 65.0
 
 * Include Models
-.lib ~/skywater_pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib TT
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib TT
 
 * OP Parameters & Singals to save
 .save all
@@ -106,13 +109,13 @@ value="
   *print PM*180/PI
   *meas ac GM find vdb(vout) when vp(vout)=0
   plot vdb(vout) \{vp(vout)*180/PI\}
-  write ~/caravel_fulgor_opamp/xschem/sim_results/opamp_closeloop_ac1.raw
+  *write ~/fulgor-opamp-sky130/xschem/opamp_diego/sim_results/opamp_closeloop_rpad_ac1.raw
   
   reset
   tran 0.01u 11u
   setplot tran1
   plot v(vsen) v(vout)
-  write ~/caravel_fulgor_opamp/xschem/sim_results/opamp_closeloop_tran1.raw
+  *write ~/fulgor-opamp-sky130/xschem/opamp_diego/sim_results/opamp_closeloop_rpad_tran1.raw
 
   reset    
   noise v(vout) V4 dec 100 1k 10G 1
@@ -124,13 +127,13 @@ value="
   *plot inoise_total onoise_total
   print inoise_total
   print onoise_total
-  write ~/caravel_fulgor_opamp/xschem/sim_results/opamp_closeloop_noise.raw
+  *write ~/fulgor-opamp-sky130/xschem/opamp_diego/sim_results/opamp_closeloop_rpad_noise.raw
   
   reset
   op
   setplot op1
   print vout  
-  write ~/caravel_fulgor_opamp/xschem/sim_results/opamp_closeloop_op1.raw
+  *write ~/fulgor-opamp-sky130/xschem/opamp_diego/sim_results/opamp_closeloop_rapd_op1.raw
   
 .endc
 
@@ -138,16 +141,26 @@ value="
 "}
 C {opamp.sym} 1240 -340 0 0 {name=x1}
 C {lab_pin.sym} 1250 -260 3 0 {name=l1 sig_type=std_logic lab=vss}
-C {capa.sym} 1390 -280 0 0 {name=C1
+C {capa.sym} 1460 -280 0 0 {name=C1
 m=1
 value=20p
 footprint=1206
 device="ceramic capacitor"}
-C {lab_pin.sym} 1390 -200 3 0 {name=l2 sig_type=std_logic lab=vss}
-C {lab_wire.sym} 1360 -340 0 0 {name=l3 sig_type=std_logic lab=vout}
+C {lab_pin.sym} 1460 -200 3 0 {name=l2 sig_type=std_logic lab=vss}
+C {lab_wire.sym} 1440 -340 0 0 {name=l3 sig_type=std_logic lab=vout}
 C {lab_pin.sym} 1110 -150 3 0 {name=l5 sig_type=std_logic lab=vss}
 C {lab_wire.sym} 1150 -320 0 0 {name=l4 sig_type=std_logic lab=vcm}
 C {vsource.sym} 1110 -220 0 0 {name=V5 value=DC\{vcm\}}
-C {lab_wire.sym} 1110 -360 0 0 {name=l6 sig_type=std_logic lab=vin}
+C {lab_wire.sym} 1070 -360 0 0 {name=l6 sig_type=std_logic lab=vin}
 C {lab_wire.sym} 840 -360 0 0 {name=l7 sig_type=std_logic lab=vin_signal}
 C {lab_pin.sym} 1230 -420 1 0 {name=l8 sig_type=std_logic lab=vdd}
+C {res.sym} 1120 -360 1 0 {name=R2
+value=150
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 1370 -340 1 0 {name=R4
+value=150
+footprint=1206
+device=resistor
+m=1}

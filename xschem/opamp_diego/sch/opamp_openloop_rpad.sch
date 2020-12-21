@@ -24,17 +24,19 @@ N 1450 -320 1450 -280 { lab=vss}
 N 1450 -430 1450 -380 { lab=vin}
 N 1630 -350 1630 -310 { lab=#net1}
 N 1670 -350 1670 -330 { lab=vss}
-N 1780 -410 1780 -390 { lab=vout}
-N 1730 -410 1780 -410 { lab=vout}
-N 1780 -330 1780 -300 { lab=vss}
+N 1920 -410 1920 -390 { lab=vout}
+N 1920 -330 1920 -300 { lab=vss}
 N 1650 -490 1650 -460 { lab=vdd}
 N 1540 -390 1590 -390 { lab=vcm}
 N 1530 -390 1530 -310 { lab=vcm}
 N 1530 -390 1540 -390 { lab=vcm}
-N 1510 -430 1590 -430 { lab=vin}
 N 1590 -620 1780 -620 { lab=vout}
-N 1780 -620 1780 -410 { lab=vout}
+N 1920 -620 1920 -410 { lab=vout}
 N 1340 -620 1530 -620 { lab=ve}
+N 1780 -620 1920 -620 { lab=vout}
+N 1820 -410 1920 -410 { lab=vout}
+N 1730 -410 1760 -410 { lab=#net2}
+N 1570 -430 1590 -430 { lab=#net3}
 C {vsource.sym} 1132.5 -167.5 0 0 {name=V1 value=DC\{vss\}}
 C {vsource.sym} 1220 -167.5 0 0 {name=V2 value=DC\{vdd\}}
 C {vsource.sym} 1530 -280 0 0 {name=V3 value=DC\{vcm\}}
@@ -94,7 +96,9 @@ value="
 .options TEMP = 65.0
 
 * Include Models
-.lib ~/skywater_pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib fs
+*.lib /home/dhernando/projects/foundry/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib SS
+*.lib  ~/fulgor-opamp-sky130/xschem/sky130.lib TT
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib TT
 
 * OP Parameters & Singals to save
 .save all
@@ -119,32 +123,42 @@ value="
   print PM*180/PI
   meas ac GM find vdb(vout) when vp(vout)=0
   plot vdb(vout) \{vp(vout)*180/PI\}
-  write ~/caravel_fulgor_opamp/xschem/sim_results/opamp_openloop_ac1.raw
+  *write ~/fulgor-opamp-sky130/xschem/opamp_diego/sim_results/opamp_openloop_rpad_ac1.raw
 
   reset
   op
   setplot op1
-  write ~/caravel_fulgor_opamp/xschem/sim_results/opamp_openloop_op1.raw
+  *write ~/fulgor-opamp-sky130/xschem/opamp_diego/sim_results/opamp_openloop_rpad_op1.raw
 
 .endc
 
 .end
 "}
 C {lab_pin.sym} 1670 -330 3 0 {name=l1 sig_type=std_logic lab=vss}
-C {capa.sym} 1780 -360 0 0 {name=C1
+C {capa.sym} 1920 -360 0 0 {name=C1
 m=1
 value=20p
 footprint=1206
 device="ceramic capacitor"}
-C {lab_pin.sym} 1780 -300 3 0 {name=l2 sig_type=std_logic lab=vss}
-C {lab_wire.sym} 1772.5 -410 0 0 {name=l3 sig_type=std_logic lab=vout
+C {lab_pin.sym} 1920 -300 3 0 {name=l2 sig_type=std_logic lab=vss}
+C {lab_wire.sym} 1912.5 -410 0 0 {name=l3 sig_type=std_logic lab=vout
 
 }
 C {lab_pin.sym} 1650 -490 1 0 {name=l4 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} 1572.5 -390 0 0 {name=l5 sig_type=std_logic lab=vcm
 
 }
-C {lab_wire.sym} 1522.5 -430 0 0 {name=l6 sig_type=std_logic lab=vin
+C {lab_wire.sym} 1482.5 -430 0 0 {name=l6 sig_type=std_logic lab=vin
 
 }
 C {opamp.sym} 1660 -410 0 0 {name=x1}
+C {res.sym} 1540 -430 1 0 {name=R4
+value=150
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 1790 -410 1 0 {name=R5
+value=150
+footprint=1206
+device=resistor
+m=1}

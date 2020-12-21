@@ -96,7 +96,7 @@ value="
 * Include Models
 *.lib /home/dhernando/projects/foundry/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib SS
 *.lib  ~/fulgor-opamp-sky130/xschem/sky130.lib TT
-.lib ~/skywater_pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib fs
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib fs
 
 * OP Parameters & Singals to save
 .save all
@@ -121,12 +121,12 @@ value="
   print PM*180/PI
   meas ac GM find vdb(vout) when vp(vout)=0
   plot vdb(vout) \{vp(vout)*180/PI\}
-  write ~/fulgor-opamp-sky130/xschem/sim_results/opamp_openloop_ac1.raw
+  *write ~/fulgor-opamp-sky130/xschem/opamp_julia/sim_results/opamp_openloop_ac1.raw
 
   reset
   op
   setplot op1
-  write ~/fulgor-opamp-sky130/xschem/sim_results/opamp_openloop_op1.raw
+  *write ~/fulgor-opamp-sky130/xschem/opamp_julia/sim_results/opamp_openloop_op1.raw
 
 .endc
 

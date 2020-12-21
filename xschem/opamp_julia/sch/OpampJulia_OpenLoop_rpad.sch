@@ -125,12 +125,12 @@ value="
   print PM*180/PI
   meas ac GM find vdb(vout) when vp(vout)=0
   plot vdb(vout) \{vp(vout)*180/PI\}
-  write ~/fulgor-opamp-sky130/xschem/sim_results_julia/opamp_openloop_ac1.raw
+  *write ~/fulgor-opamp-sky130/xschem/opamp_julia/sim_results_julia/opamp_openloop_ac1.raw
 
   reset
   op
   setplot op1
-  write ~/fulgor-opamp-sky130/xschem/sim_results_julia/opamp_openloop_op1.raw
+  *write ~/fulgor-opamp-sky130/xschem/opamp_julia/sim_results_julia/opamp_openloop_op1.raw
 
 .endc
 

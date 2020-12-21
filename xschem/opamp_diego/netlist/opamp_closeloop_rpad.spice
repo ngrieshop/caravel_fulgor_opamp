@@ -1,4 +1,4 @@
-**.subckt opamp_closeloop
+**.subckt opamp_closeloop_rpad
 V1 vss GND DC{vss} 
 V2 vdd vss DC{vdd} 
 V4 vsen vcm sin(0 {vac} 1Meg) dc 0 ac 1 
@@ -7,9 +7,11 @@ I0 net1 vss DC{iref}
 R1 vin vin_signal 500 m=1
 R3 vout vin 5k m=1
 C5 vin vss 5p m=1
-x1 vdd net1 vin vcm vout vss opamp
+x1 vdd net1 net2 vcm net3 vss opamp
 C1 vout vss 20p m=1
 V5 vcm vss DC{vcm} 
+R2 net2 vin 150 m=1
+R4 vout net3 150 m=1
 **** begin user architecture code
 
 
@@ -24,7 +26,7 @@ V5 vcm vss DC{vcm}
 .options TEMP = 65.0
 
 * Include Models
-.lib ~/skywater_pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib TT
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/sky130.lib TT
 
 * OP Parameters & Singals to save
 .save all  @M.X1.XM1.msky130_fd_pr__pfet_01v8[id] @M.X1.XM1.msky130_fd_pr__pfet_01v8[vth]
@@ -60,13 +62,13 @@ V5 vcm vss DC{vcm}
   *print PM*180/PI
   *meas ac GM find vdb(vout) when vp(vout)=0
   plot vdb(vout) {vp(vout)*180/PI}
-  write ~/fulgor-opamp-sky130/xschem/sim_results/opamp_closeloop_ac1.raw
+  *write ~/fulgor-opamp-sky130/xschem/opamp_diego/sim_results/opamp_closeloop_rpad_ac1.raw
 
   reset
   tran 0.01u 11u
   setplot tran1
   plot v(vsen) v(vout)
-  write ~/fulgor-opamp-sky130/xschem/sim_results/opamp_closeloop_tran1.raw
+  *write ~/fulgor-opamp-sky130/xschem/opamp_diego/sim_results/opamp_closeloop_rpad_tran1.raw
 
   reset
   noise v(vout) V4 dec 100 1k 10G 1
@@ -78,13 +80,13 @@ V5 vcm vss DC{vcm}
   *plot inoise_total onoise_total
   print inoise_total
   print onoise_total
-  write ~/fulgor-opamp-sky130/xschem/sim_results/opamp_closeloop_noise.raw
+  *write ~/fulgor-opamp-sky130/xschem/opamp_diego/sim_results/opamp_closeloop_rpad_noise.raw
 
   reset
   op
   setplot op1
   print vout
-  write ~/fulgor-opamp-sky130/xschem/sim_results/opamp_closeloop_op1.raw
+  *write ~/fulgor-opamp-sky130/xschem/opamp_diego/sim_results/opamp_closeloop_rapd_op1.raw
 
 .endc
 
@@ -119,7 +121,7 @@ XM8 iref iref vdd vdd sky130_fd_pr__pfet_01v8 W=3 L=0.3 ad='W * 0.29' pd='2 * (W
 + ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=15 m=15 
 XM9 net1 vdd voe1 vss sky130_fd_pr__nfet_01v8 W=0.75 L=0.15 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
 + ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=6 m=6 
-XC1 net1 vout sky130_fd_pr__cap_mim_m3_1 W=15 L=17.55 MF=6 m=6
+XC1 net1 vout sky130_fd_pr__cap_mim_m3_1 W=17.55 L=15 MF=6 m=6
 XM6 vout voe1 vss vss sky130_fd_pr__nfet_01v8 W=4.5 L=0.45 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
 + ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=150 m=150 
 .ends
