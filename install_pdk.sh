@@ -12,6 +12,7 @@ sudo apt-get install libtool automake autoconf texinfo libreadline-dev \
                      libqt5opengl5 libqt5svg5 libqt5xmlpatterns5 libruby
 
 echo "################# Changing directory to $HOME       #################"
+cd
 
 echo "################# Creating directory for PDK & Tools          #################"
 mkdir skywater
