@@ -10,12 +10,12 @@ This script does the following:
  - Clones & installs the [Google-Skywater 130nm Open Source PDK](https://github.com/google/skywater-pdk)
  - Installs the schematic caputre tool [XSCHEM](https://xschem.sourceforge.io/stefan/index.html)
  - Installs XSCHEM symbol library for the Google-Skywater 130nm Open Source PDK.
- - Installs the simualtion engine [ngspcie] (http://ngspice.sourceforge.net/)
- - Installs the layout desing tool [magic] (http://opencircuitdesign.com/magic/index.html)
- - Installs the layput desing tool [klayout] (https://www.klayout.de/)
- - Installs the LVS check tool [netgen] (http://opencircuitdesign.com/netgen/index.html)
- - Installs the [Open_PDKs] (http://opencircuitdesign.com/open_pdks/index.html)
- - Installs the [pre-check tool] (https://github.com/efabless/open_mpw_precheck) for the Efabless/Skywater/Google [Caravel] (https://github.com/efabless/caravel) project.
+ - Installs the simualtion engine [ngspcie](http://ngspice.sourceforge.net/)
+ - Installs the layout desing tool [magic](http://opencircuitdesign.com/magic/index.html)
+ - Installs the layput desing tool [klayout](https://www.klayout.de/)
+ - Installs the LVS check tool [netgen](http://opencircuitdesign.com/netgen/index.html)
+ - Installs the [Open_PDKs](http://opencircuitdesign.com/open_pdks/index.html)
+ - Installs the [pre-check tool](https://github.com/efabless/open_mpw_precheck) for the Efabless/Skywater/Google [Caravel](https://github.com/efabless/caravel) project.
  
 # General Purpose Open Source Operational Amplifier (OpAmp)
 This project is a test chip, which contains several two stages operationals amplifiers with Miller compensation. This is an all analog desing implemented on the [Google-Skywater 130nm Open Source PDK](https://skywater-pdk.readthedocs.io/en/latest/). It is an Open Source project under[Apache License 2.0] (LICENSE).
