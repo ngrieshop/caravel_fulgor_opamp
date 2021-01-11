@@ -63,6 +63,7 @@ cd xschem
             --sys-lib-path=/usr/local/share/xschem/xschem_library
 make 
 sudo make install
+cd ../
 
 echo "################# Installing Magic                            #################"
 git clone git://opencircuitdesign.com/magic
@@ -93,14 +94,11 @@ git clone git://opencircuitdesign.com/open_pdks
 cd open_pdks
 git checkout open_pdks-1.0
 mkdir -p $HOME/skywater/pdk/skywater130
-./configure --with-sky130-source=/home/skywater/skywater-pdk --with-sky130-local-path=/home/skywater/pdk/skywater130 --with-ef-style
+./configure --with-sky130-source=$HOME/skywater/skywater-pdk --with-sky130-local-path=$HOME/skywater/pdk/skywater130 --with-ef-style
 cd sky130
 make
 sudo make install
-cd ..
-
-#echo "################# Cloning OpAmp Repository                    #################"
-#git clone https://github.com/diegohernando/caravel_fulgor_opamp.git
+cd ../
 
 echo "################# Loading ngpsice library                     #################"
 cp caravel_fulgor_opamp/xschem/sky130.lib skywater/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners
