@@ -1,4 +1,4 @@
-# PDK, Tools & Pre-requisites Intallation
+# PDK, Tools & Pre-requisites Installation
 In order to get the [caravel_fulgor_opamp](https://github.com/diegohernando/caravel_fulgor_opamp) project running several tools and files need to be installed. To simplify the installation and to make sure you fullfill all the pre-requisites an [install_pdk.sh](install_pdk.sh) script is provided. To run the script just type on the console:
 
 ```bash
@@ -18,9 +18,29 @@ This script does the following:
  - Installs the [pre-check tool](https://github.com/efabless/open_mpw_precheck) for the Efabless/Skywater/Google [Caravel](https://github.com/efabless/caravel) project.
  
 # General Purpose Open Source Operational Amplifier (OpAmp)
-This project is a test chip, which contains several two stages operationals amplifiers with Miller compensation. This is an all analog desing implemented on the [Google-Skywater 130nm Open Source PDK](https://skywater-pdk.readthedocs.io/en/latest/). It is an Open Source project under[Apache License 2.0] (LICENSE).
+This project is a test chip, which contains several two stages operationals amplifiers with Miller compensation. This is an all analog desing implemented on the [Google-Skywater 130nm Open Source PDK](https://skywater-pdk.readthedocs.io/en/latest/). It is an Open Source project under[Apache License 2.0](LICENSE).
 
 The OpAmp desing is located in an Open Source SoC Harness obtained from the [efabless](https://efabless.com/) [Caravel Project](https://github.com/efabless/caravel). 
+
+# Running the Tools
+## Xschem
+To run xschem and be able to simulate the OpAmp's test benches the following commands need to be run:
+
+```bash
+cd caravel_fulgor_opamp/xschem
+xschem
+```
+In the xschem folder it is found the [xschemrc](xschem/xschemrc) file, where the paths to the xschem libraries are defined.
+
+## Magic
+To run magic and be able to edit or desing a layout the following commands need to be run:
+
+```bash
+cd caravel_fulgor_opamp
+magic -rcfile mag/dh.magicrc
+```
+The [dh.magicrc](mag/dh.magicrc) file specifies where the open_pdk layout libraries are located. If magic is used without the -rcfile specification, the sky130 library won't be loaded.
+
 
 # OpAmp Desing
 ## General Specifications:
