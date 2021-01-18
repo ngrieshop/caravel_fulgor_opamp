@@ -67,8 +67,8 @@ cd ../
 
 echo "################# Installing Magic                            #################"
 git clone git://opencircuitdesign.com/magic
-git checkout magic-8.3
 cd magic
+git checkout magic-8.3
 ./configure
 make
 sudo make install
