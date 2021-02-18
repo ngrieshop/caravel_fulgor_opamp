@@ -94,7 +94,7 @@ git clone git://opencircuitdesign.com/open_pdks
 cd open_pdks
 git checkout open_pdks-1.0
 mkdir -p $HOME/skywater/pdk/skywater130
-./configure --ebale-sky130-pdk=$HOME/skywater/skywater-pdk --with-sky130-local-path=$HOME/skywater/pdk/skywater130 --with-ef-style
+./configure --enable-sky130-pdk=$HOME/skywater/skywater-pdk --with-sky130-local-path=$HOME/skywater/pdk/skywater130 --with-ef-style
 cd sky130
 make
 sudo make install
