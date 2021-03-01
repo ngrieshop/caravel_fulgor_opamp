@@ -50,7 +50,15 @@ The [dh.magicrc](mag/dh.magicrc) file specifies where the open_pdk layout librar
  - DC Gain 
  - Bandwidth
  - Chip Area
- 
+
+## Layout 
+<p align=”center”>
+<img src="/doc/images/layouts.png" width="75%" height="75%"> 
+</p>
+
+<p align=”center”>
+<img src="/doc/images/caravel_layout.png" width="75%" height="75%"> 
+</p>
 # CIIC Harness  
 
 A template SoC for Google SKY130 free shuttles. It is still WIP. The current SoC architecture is given below.
