@@ -38,9 +38,9 @@ echo "################# Cloning Google/Skywarter Symbols for Xschem ############
 git clone https://github.com/StefanSchippers/xschem_sky130.git
 
 echo "################# Installing ngspice                          #################"
-wget https://sourceforge.net/projects/ngspice/files/ng-spice-rework/33/ngspice-33.tar.gz
-tar -zxvf ngspice-33.tar.gz
-cd ngspice-33
+wget https://sourceforge.net/projects/ngspice/files/ng-spice-rework/37/ngspice-37.tar.gz
+tar -zxvf ngspice-37.tar.gz
+cd ngspice-37
 mkdir release
 cd release
 ../configure --with-x --enable-xspice --enable-cider --enable-openmp --with-readlines=yes --disable-debug
@@ -53,7 +53,7 @@ cd build-lib
 make
 sudo make install
 cd ../../
-rm ngspice-33.tar.gz
+rm ngspice-37.tar.gz
 
 echo "################# Installing XSCHEM                           #################"
 git clone https://github.com/StefanSchippers/xschem.git
